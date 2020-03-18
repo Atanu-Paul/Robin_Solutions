@@ -94,7 +94,7 @@ class MaxHeap:
 # Driver Code
 if __name__ == "__main__":
     print('The maxHeap is ')
-    maxHeap = MaxHeap(15)
+    maxHeap = MaxHeap(20)
     maxHeap.insert(5)
     maxHeap.insert(3)
     maxHeap.insert(17)
@@ -110,8 +110,8 @@ if __name__ == "__main__":
     maxHeap.insert(4)
     maxHeap.insert(2)
     maxHeap.insert(1)
-    # maxHeap.insert(99)
-    # maxHeap.insert(69)
+    maxHeap.insert(99)
+    maxHeap.insert(69)
 
     maxHeap.Print()
     print("The Max val is " + str(maxHeap.extractMax()))
