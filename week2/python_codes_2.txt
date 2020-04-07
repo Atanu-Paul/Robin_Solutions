@@ -1,0 +1,11 @@
+1) In python, the size of float and integer is the same in terms of bytes then how is it able to store such large values?
+int and float usually take up "one-word" in memory. 
+Today, with the shift to 64bit systems this may mean that your word is 64 bits, or 8 bytes, allowing the representation of a huge span of numbers. 
+In a 32bit system meaning each word in memory takes up 4 bytes. 
+Typically memory can be accessed on a word by word basis.
+The difference between int and float is not their physical space in memory, but in the way the ALU (Arithmetic Logic Unit) behaves with the number. 
+An int represents its directly corresponding number in binary.
+A float on the other hand is encoded to represent a number in exponential form (i.e. 2.99*10^6 is in exponential form).
+2) How many bits are there in 1GB and 1MB?
+1 GB = 8 000 000 000 bits
+1 MB = 8 000 000 bits

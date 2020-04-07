@@ -1,0 +1,4 @@
+2) As you can see this code is much faster than selection sort. (it has no nested loop) 
+What do you think is the reason this is not very widely used?
+Counting sort, by all means, is really easy to implement but it can only be used with integers, with known range else requires two iteration and one auxiliary array to store count.
+Hence counting sort
