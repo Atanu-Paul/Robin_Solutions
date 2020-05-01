@@ -1,0 +1,27 @@
+{
+  "name": "calculator_mvc",
+  "version": "1.0.0",
+  "description": "calculator mvc",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "cal",
+    "mvc",
+    "express",
+    "morgon",
+    "nodemon"
+  ],
+  "author": "Atanu Paul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  }
+}
