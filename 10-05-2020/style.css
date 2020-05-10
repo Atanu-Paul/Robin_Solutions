@@ -1,0 +1,54 @@
+body {
+  color: rgb(236, 243, 236);
+  background-image: url('background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: 90rem; */
+  background-size: cover;
+}
+
+table,
+tr,
+th,
+td {
+  border: black 1px solid;
+}
+
+.td-style {
+  height: 40px;
+  text-align: left;
+  vertical-align: bottom;
+  padding: 15px;
+}
+
+tr:hover {
+  background-color: #0bece1;
+  color: black;
+}
+
+#table-style {
+  margin-left: 30rem;
+  border-collapse: collapse;
+  background-image: url('background1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.th-style {
+  background-color: burlywood;
+}
+
+h3 {
+  margin-left: 38rem;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+#cat-img {
+  /* margin-left: 30px; */
+  float: right;
+}

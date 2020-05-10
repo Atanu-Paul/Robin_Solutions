@@ -1,0 +1,26 @@
+{
+  "name": "hbs-demo",
+  "version": "1.0.0",
+  "description": "demo file for hbs ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon -e js,hbs"
+  },
+  "keywords": [
+    "express",
+    "hbs"
+  ],
+  "author": "Atanu Paul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "sequelize": "^5.21.8"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  }
+}
