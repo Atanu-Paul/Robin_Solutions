@@ -1,0 +1,26 @@
+{
+  "name": "week15day2a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon -e js,hbs"
+  },
+  "keywords": [
+    "express",
+    "hbs",
+    "pug"
+  ],
+  "author": "Atanu Paul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
+  }
+}
