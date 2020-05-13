@@ -9,15 +9,37 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  color: rgb(250, 246, 246);
   background-image: url('../img/bg1.jpg');
-  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
   background-position: center;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
 }
 
-h1 {
-  margin-left: 8em;
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
 }

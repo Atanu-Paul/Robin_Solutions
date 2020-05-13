@@ -1,9 +1,14 @@
+<br><br>
 <section class="container">
-  <form action="/add" method="post">
-    <input type="text" placeholder="ADD ID">
-    <input type="text" placeholder="ADD USer ID">
-    <input type="text" placeholder="ADD Title">
-    <input type="text" placeholder="ADD Body">
-    <input type="button" value="ADD">
+  <form action="/add" method="POST" class="form-group">
+    <input type="text" name="id" id="id" placeholder="ADD ID" class="form-control">
+    <br><br>
+    <input type="text" name="userId" id="uid" id="title" placeholder="ADD USer ID" class="form-control">
+    <br><br>
+    <input type="text" name="title" id="title" placeholder="ADD Title" class="form-control">
+    <br><br>
+    <input type="text" name="body" id="body" placeholder="ADD Body" class="form-control">
+    <br><br>
+    <input type="submit" id="btn-add" value="ADD" class="btn btn-reverse btn-success btn-lg btn-block">
   </form>
 </section>

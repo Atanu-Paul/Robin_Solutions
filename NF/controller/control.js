@@ -12,7 +12,7 @@ control.allDataRoute1 = (req, res) => {
 };
 
 control.showOne = (req, res) => {
-  var query = req.query.id;
+  var query = req.query.search;
 
   for (i = 0; i <= data.length; i++) {
     if (query == i) {
@@ -27,4 +27,11 @@ control.addform = (req, res) => {
   res.status(200).render("add", { title: "Add Data" });
 };
 
+control.add = (req, res) => {
+  let newObj = { ...req.body };
+  data.push(newObj);
+
+  // console.log(newObj);
+  res.status(200).render("page1", { title: "ALL DATA PAGE", data: data });
+};
 module.exports = control;
