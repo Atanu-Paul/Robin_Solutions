@@ -1,0 +1,23 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  color: rgb(250, 246, 246);
+  background-image: url('../img/bg1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin-left: 8em;
+}

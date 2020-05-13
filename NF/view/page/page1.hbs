@@ -1,0 +1,26 @@
+<section class="container">
+  <h3 class="h3-style">ALL DATA</h3>
+
+  <table class="table table-dark table-borderless table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">USER ID</th>
+        <th scope="col">TITLE</th>
+        <th scope="col">BODY</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each data}}
+
+      <tr>
+        <td>{{id}}</td>
+        <td>{{userId}}</td>
+        <td>{{title}}</td>
+        <td>{{body}}</td>
+      </tr>
+
+      {{/each}}
+    </tbody>
+  </table>
+</section>
