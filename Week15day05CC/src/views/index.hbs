@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Picture Gallery!</title>
+</head>
+
+<body>
+    <h2>Picture Gallery</h2>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <p>
+            Title: <input type="text" name="title">
+        </p>
+        <p>
+            Picture: <input type="file" name="image" multiple>
+        </p>
+        <button type="submit">Upload</button>
+    </form>
+    <p>Your Images</p>
+    {{#if images}}
+    <ol>
+
+        {{#each images as |image|}}
+        <li> {{image}} </li>
+        <img src="{{image}}" alt="images-description" width="250" height="200">
+        {{/each}}
+
+    </ol>
+    {{/if}}
+</body>
+
+</html>
