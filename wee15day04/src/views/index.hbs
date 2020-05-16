@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tennis-Players App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-secondary text-white">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="offset-md-4 col-md-4">
+        <h2>Tennis-Players</h2>
+        <hr>
+
+        {{#if isFound}}
+
+        {{#if db}}
+        <ol>
+          {{#each db}}
+          <div class="alert alert-success" role="alert">
+            <p>Id : {{id}} , Name : {{username}} , Country : {{country}}</p>
+          </div>
+          {{/each}}
+        </ol>
+
+        {{else}}
+        <div class="alert alert-warning" role="alert">
+          {{message}}
+          <p></p>
+          <p>Id : {{id}}</p>
+          <p>Name : {{name}}</p>
+          <p>Country : {{country}}</p>
+        </div>
+        {{/if}}
+
+        {{else}}
+        <div class="alert alert-info" role="alert">
+          {{message}}
+        </div>
+        {{/if}}
+
+        <form action="/getAll" method="GET">
+
+          <button class="btn btn-dark" type="submit">View All</button>
+
+        </form>
+
+        <form action="/add" method="POST">
+
+          <label for="username">
+            Name:
+            <input class="form-control" type="text" name="username" id="username">
+          </label>
+
+          <label for="country">
+            Country:
+            <input class="form-control" type="text" name="country" id="country">
+          </label>
+
+          <button class="btn btn-success" type="submit">Add</button>
+
+          <p></p>
+
+        </form>
+
+        <form action="/update" method="POST">
+
+          <label for="username">
+            Name:
+            <input class="form-control" type="text" name="username" id="username">
+          </label>
+
+          <label for="country">
+            Country:
+            <input class="form-control" type="text" name="country" id="country">
+          </label>
+
+          <label for="id">
+            Id:
+            <input class="form-control" type="text" name="id" id="id">
+          </label>
+
+          <p></p>
+
+          <button class="btn btn-warning" type="submit">Update</button>
+
+          <p></p>
+
+        </form>
+
+        <form action="/delete" method="POST">
+
+          <label for="id">
+            Id:
+            <input class="form-control" type="text" name="id" id="id">
+          </label>
+
+          <p></p>
+
+          <button class="btn btn-danger" type="submit">Delete</button>
+
+          <p></p>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
