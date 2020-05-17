@@ -27,9 +27,9 @@ const storage = multer.diskStorage({
 
 //Configure cloudinary
 cloudinary.config({
-    cloud_name: 'dtkwh8lex',
-    api_key: '758172342641699',
-    api_secret: 'eaEXm60T8JL8CdrN6DB-jRC_wXM'
+  cloud_name: "sample",
+  api_key: "874837483274837",
+  api_secret: "a676b67565c6767a6767d6767f676fe1",
 })
 
 //Define storage path
