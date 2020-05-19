@@ -1,0 +1,18 @@
+db.createCollection('demo1')
+
+db.demo1.insert({
+  title: 'Post Two',
+  body: 'Body of post one',
+  category: 'News',
+  tags: ['news', 'events'],
+  user: {
+    name: 'John Doe',
+    status: 'author'
+  },
+  created_At: Date(),
+  updated_At: Date()
+})
+
+db.demo1.find()
+
+// 
