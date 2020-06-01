@@ -1,0 +1,86 @@
+? Build schema for banking application
+? The schema should contain the following entities -
+? Branch
+? Account
+? Customer
+? Financial Transaction
+? Loan
+? Deposit
+? Write SQL queries for inserting data in all of the above tables.
+? Write SQL queries for returning data from all of the above tables.
+? Write an SQL query for returning all the customers who has an account in the
+Bangalore branch.
+? Write an SQL query that returns customers who have both savings and loan
+accounts.
+---------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE public.customer
+(
+    c_id bigserial,
+    c_name text,
+    c_add text,
+	b_idFK INTEGER,
+    PRIMARY KEY (c_id),
+	FOREIGN KEY (b_idFK) REFERENCES public.branch (b_id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE public.customer
+    OWNER to fsqqzbsy;
+------------------------------------
+CREATE TABLE public.account
+(
+    a_id bigserial NOT NULL,
+    debit INTEGER,
+    crdit INTEGER,
+	b_idFK INTEGER,
+	c_idFK INTEGER,
+-----------------------------------------------------
+INSERT INTO public.branch
+(b_name, b_address)
+VALUES
+('dsfdas', 'sdfasdfsadfasdf');
+
+    PRIMARY KEY (a_id),
+	FOREIGN KEY (b_idFK) REFERENCES public.branch (b_id),
+	FOREIGN KEY (c_idFK) REFERENCES public.customer (c_id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE public.customer
+    OWNER to fsqqzbsy;
+------------------------------------------
+CREATE TABLE public.deposite
+(
+    d_id bigserial NOT NULL,
+    date_time date,
+	amount integer,
+    PRIMARY KEY (d_id)
+)
+WITH (
+    OIDS = FALSE
+);
+
+ALTER TABLE public.customer
+    OWNER to fsqqzbsy;
+----------------------------------------------
+ INSERT INTO public.customer
+  (c_name, c_add,b_idfk)
+ VALUES
+  ('jhon', 'qew123', 3);
+-------------------------------------------
+ INSERT INTO public.account
+    (b_idfk,c_idfk,loan_acc,saving_acc)
+   VALUES
+   (3, 1, 'true','false')
+-------------------------------------------------
+ select * from customer
+-----------------------------------------
+
+select * from branch  inner join customer on branch.b_id=customer.b_idfk where b_name='bangalore'
+---------------------------------------------------------------------------------------------------------
+select * from account  inner join customer on customer.c_id=account.c_idfk where saving_acc='true' and loan_acc='true'
