@@ -1,0 +1,42 @@
+INNER JOIN:
+-----------
+select * from branch  inner join customer on branch.b_id=customer.b_idfk where b_name='bangalore'
+---------------------------------------------------------------------------------------------------------
+select * from account  inner join customer on customer.c_id=account.c_idfk where saving_acc='true' and loan_acc='true'
+----------------------------------------------------------------------------------------------------------------------
+SELECT * FROM branch inner join customer on branch.b_id=customer.b_idfk WHERE b_name LIKE '%b%';
+----------------------------------------------------------------------------------------------------------------------
+
+LEFT JOIN:
+------------------
+select * from branch left join customer on branch.b_name=customer.c_name;
+------------------------------------------------------------------------------
+select * from branch left join customer on branch.b_name=customer.c_name where branch.b_name='bangalore';
+--------------------------------------------------------------------------------------------------------------
+select * from branch left join customer on branch.b_name=customer.c_name where branch.b_name like '%b%';
+
+RIGHT Join:
+---------------------
+select * from branch right join customer on branch.b_name=customer.c_name;
+-------------------------------------------------------------------------------
+select * from branch right join customer on branch.b_name=customer.c_name where customer.c_name='jhon';
+----------------------------------------------------------------------------------------------------------
+select * from branch right join customer on branch.b_name=customer.c_name where customer.c_name like '%j%'
+---------------------------------------------------------------------------------------------------------------
+
+FULL OUTER JOIN
+-------------------------
+SELECT *
+FROM branch
+FULL OUTER JOIN customer ON branch.b_id=customer.b_idfk
+ORDER BY customer.c_name;
+-------------------------------------------------------
+CROSS JOIN
+----------------
+SELECT *
+FROM branch
+cross join customer
+-------------------------------
+SELECT *
+FROM branch
+cross join customer where branch.b_name='bangalore'
