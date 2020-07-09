@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="formSection">
+      <h1 style="text-align: center;">Survey Form</h1>
+      <form action="#" class="formStyle">
+        <div class="contentStyle">
+          <label for="firstNameTxb">First Name: </label>
+          <input type="text" name="firstNameTxb" id="firstNameTxb" />
+        </div>
+        <br />
+        <div class="contentStyle">
+          <label for="lastNameTxb">Last Name: </label>
+          <input type="text" name="lastNameTxb" id="lastNameTxb" />
+        </div>
+        <br />
+        <div class="contentStyle">
+          <label for="address">Address: </label>
+          <input type="text" name="address" id="address" />
+        </div>
+        <br />
+        <div class="contentStyle">
+          <label for="state">State: </label>
+          <select name="state" id="state">
+            <option value="state1">state1</option>
+            <option value="state2">state2</option>
+            <option value="state3">state3</option>
+            <option value="state4">state4</option>
+          </select>
+        </div>
+        <br />
+        <div class="contentStyle">
+          <label for="pass">Password: </label>
+          <input type="password" name="pass" id="pass" />
+        </div>
+        <br />
+        <div class="contentStyle1">
+          <label>Gender</label>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            class="marginStyle"
+          />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <br />
+        <div class="contentStyle1">
+          <label for="sheepCheck">Do you bleat like a sheep</label>
+          <input
+            type="checkbox"
+            name="sheepCheck"
+            id="sheepCheck"
+            style="margin-left: 8.5em;"
+          />
+          Yes
+        </div>
+        <br />
+        <div class="contentStyle1">
+          <label>How many cups of coffee do you drink a day?</label><br />
+          <input type="radio" id="coffee" name="coffee" value="0-2" />
+          <label>0 to 2 Cup(s)</label>
+          <input type="radio" id="coffee" name="coffee" value="2-4" />
+          <label>2 to 4 Cup(s)</label><br />
+          <input type="radio" id="coffee" name="coffee" value="4-8" />
+          <label>4 to 8 Cup(s)</label>
+          <input type="radio" id="coffee" name="coffee" value="8-16" />
+          <label>8 to 16 Cup(s)</label>
+        </div>
+        <br />
+        <div class="contentStyle1">
+          <label for="PC">Do you own a PC </label>
+          <select name="PC" id="PC" style="margin-left: 12em;">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <br />
+        <div class="contentStyle1">
+          <label for="htmlForm"
+            >How long will it take to make a HTML form?</label
+          >
+          <input type="text" name="htmlForm" id="htmlForm" />
+        </div>
+        <br />
+        <div class="contentStyle1">
+          <label for="comment">Comments:</label> <br />
+          <textarea id="comment" name="comment" rows="4" cols="50"> </textarea>
+        </div>
+        <br />
+        <div class="contentStyle1">
+          <button type="reset">Reset Form</button>
+          <button type="submit">Send Survey</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

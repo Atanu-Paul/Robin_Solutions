@@ -1,0 +1,23 @@
+/* body {
+  background-color: black;
+} */
+
+.formSection {
+  width: max-content;
+  margin-left: 22.5em;
+}
+
+.contentStyle {
+  display: flex;
+  justify-content: space-around;
+}
+.contentStyle1 {
+  margin-left: 7em;
+}
+.marginStyle {
+  margin-left: 18em;
+}
+/* .formStyle {
+  border: springgreen 1px solid;
+  color: chartreuse;
+} */

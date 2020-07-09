@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="formStyle">
+      <form action="mailto:atanu.paul.rims@gamil.com" style="padding: 1em;">
+        <fieldset>
+          <legend>Purchases</legend>
+          <label for="product">Product Name</label>
+          <br />
+          <select name="product" id="product">
+            <option value="product1">product1</option>
+            <option value="product2">product2</option>
+            <option value="product3">product3</option>
+            <option value="product4">product4</option>
+          </select>
+          <br />
+          <label for="quan">Quantity</label>
+          <br />
+          <input type="text" name="quan" id="quan" />
+        </fieldset>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="firstName">First Name</label>
+          <br />
+          <input type="text" name="firstName" id="firstName" />
+          <br />
+          <label for="lirstName">Last Name</label>
+          <br />
+          <input type="text" name="lirstName" id="lirstName" />
+        </fieldset>
+        <fieldset>
+          <legend>Creadit Card Details</legend>
+          <label>Credit Card Type</label>
+          <br />
+          <input type="radio" id="visa" name="ccdr" value="visa" />
+          <label for="male">Visa</label>
+          <br />
+          <input type="radio" id="masterCard" name="ccd" value="masterCard" />
+          <label for="female">Master Card</label>
+          <br />
+          <label for="cardNum">Card Number</label>
+          <br />
+          <input type="number" id="cardNum" name="cardNum" min="1" max="16" />
+          <br />
+          <label for="ed">Expiry Date</label>
+          <br />
+          <input type="text" name="ed" id="ed" />
+        </fieldset>
+        <fieldset>
+          <legend>Billing Information</legend>
+          <label>Postal Address</label>
+          <textarea id="pa" name="pa" rows="5" cols="45"></textarea>
+          <label>Home Address</label>
+          <input type="checkbox" name="sab" id="sab" />
+          <label>Same as above</label>
+          <textarea id="ha" name="ha" rows="5" cols="45"></textarea>
+        </fieldset>
+        <br />
+        <button type="submit">Place my Order</button>
+      </form>
+    </div>
+  </body>
+</html>
