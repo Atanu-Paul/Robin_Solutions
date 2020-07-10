@@ -1,0 +1,18 @@
+body {
+  text-align: -webkit-center;
+  /* background-color: #B3D8C9; */
+  background-image: linear-gradient(#b3d8c9, white);
+}
+
+img {
+  padding: 1%;
+  border-radius: 2em;
+  width: 250px;
+  height: 250px;
+  transition: all 0.2s ease-in-out;
+}
+img:hover {
+  transform: scale(1.2);
+  box-shadow: 84px 31px 46px 8px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
