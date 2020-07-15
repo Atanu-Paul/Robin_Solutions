@@ -1,0 +1,40 @@
+// $color: red;
+@use 'variables';
+
+body {
+  background-color: variables.$backgroud_color;
+}
+
+.parkinglot {
+  display: variables.$display;
+  flex-direction: variables.$flex-direction;
+  align-items: variables.$align-tems;
+}
+
+.car {
+  width: variables.$width;
+  margin-right: variables.$margin-right;
+  margin-top: variables.$margin-top;
+  position: variables.$position;
+  top: variables.$top;
+  transition: variables.$transition-effect variables.$transition-direction
+    variables.$transition-time;
+  &:hover {
+    cursor: variables.$cursor;
+    top: variables.$hover-top-direction;
+  }
+}
+$color1: red;
+$color2: blue;
+$color3: green;
+
+.demo {
+  color: $color1;
+  p {
+    color: $color2;
+
+    &:hover {
+      color: $color3;
+    }
+  }
+}
