@@ -1,0 +1,29 @@
+body {
+  background-image: repeating-linear-gradient(black, grey);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+.body-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.body-div img {
+  width: 20em;
+  transition: ease-in 1s;
+}
+img:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5) rotate(360deg);
+}
