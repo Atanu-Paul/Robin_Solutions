@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: red;
+}
+.container {
+  height: 300px;
+  width: 100%;
+}
+
+#display {
+  width: 100%;
+  font-size: 120px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.buttons {
+  text-align: center;
+}
