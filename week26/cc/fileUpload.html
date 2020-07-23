@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Upload</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		#progressBar{
+			width: 100%;
+			background-color: transparent;
+		}
+		#barAni{
+			width: 0%;
+			height: 20px;
+			background-color: green;
+			text-align: center;
+			color:white;
+			line-height: 20px;
+		}
+	</style>
+</head>
+<body style="background-color: black;color: white">
+<div class="container">
+	<h2>Upload Image</h2>
+	<form id='formUpload' enctype="multipart/form">
+		<input type="file" name="file1" id="file1">
+		<div id='progressBar'>
+			<div id='barAni'></div>
+		</div>
+	</form>
+	<button onclick="upload()">Upload</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	var i = 0;
+function upload() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("barAni");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
